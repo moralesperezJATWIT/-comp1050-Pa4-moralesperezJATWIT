@@ -1,1 +1,34 @@
+import java.util.ArrayList;
+import java.util.Scanner;
 
+public class Pa4 {
+
+	public static void RemoveRepeats(ArrayList<Integer> UserIntInput) {
+
+		ArrayList<Integer> DistinctIntList = new ArrayList<>();
+		Scanner sc = new Scanner(System.in);
+
+		while (sc.hasNextInt()) {
+			Integer i = sc.nextInt();
+			UserIntInput.add(i);
+		}
+		System.out.println("ArrayList user input: " + UserIntInput);
+
+		for (int i : UserIntInput) {
+			if (DistinctIntList.contains(i)) {
+			} else {
+				DistinctIntList.add(i);
+			}
+		}
+		System.out.println("The distinct integers: " + DistinctIntList);
+	}
+
+	public static void main(String[] args) {
+
+		ArrayList<Integer> UserIntInput = new ArrayList<>();
+		RemoveRepeats(UserIntInput);
+
+	}
+}
+// when testing add a letter at the end of the integers then hit enter
+// example: 1 2 3 2 1 a
