@@ -13,7 +13,7 @@ public class Pa4 {
 			UserIntInput.add(i);
 		}
 		System.out.println("ArrayList user input: " + UserIntInput);
-
+		//shows user input
 		for (int i : UserIntInput) {
 			if (DistinctIntList.contains(i)) {
 			} else {
